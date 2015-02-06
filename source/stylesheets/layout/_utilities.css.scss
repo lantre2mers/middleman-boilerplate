@@ -4,30 +4,30 @@
  * Feel free to change them and create your own
  * ------------------------------------- */
 .padded {
-  padding-top: 8em;
-  padding-bottom: 8em;
+  padding-top: $very-big-padding;
+  padding-bottom: $very-big-padding;
 }
 .bg-red {
   background: $red;
-  color: white;
+  color: $white;
 }
 .bg-blue {
   background: $blue;
-  color: white;
+  color: $white;
 }
 .bg-yellow {
   background: $yellow;
-  color: white;
+  color: $white;
 }
 .bg-orange {
   background: $orange;
-  color: white;
+  color: $white;
 }
 .bg-green {
   background: $green;
-  color: white;
+  color: $white;
 }
 .bg-purple {
   background: $purple;
-  color: white;
+  color: $white;
 }

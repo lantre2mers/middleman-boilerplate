@@ -6,33 +6,31 @@
  * ------------------------------------- */
 
  body {
-  font-family: 'Open Sans', sans-serif;
-  color: #141414;
+  font-family: $base-size;
+  color: $black;
 }
 h1, h2, h3 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: $header-font;
 }
 
 .red-background {
-  background: red;
-  color: white;
+  background: $red;
+  color: $black;
 }
 
 .padding {
-  padding-top: 3em;
-  padding-bottom: 3em;
+  padding-top: $big-padding;
+  padding-bottom: $big-padding;
 }
 
 .card{
-  padding: 0px 0px 0px 25px;
-  font-weight: 0;
-}
-
-.card h2{
-  font-size: 20px;
+  padding-left: $small-padding;
+  h2 {
+    font-size: $base-size;
+  }
 }
 
 #white-block {
-  padding-top: 8em;
-  padding-bottom: 8em;
+  padding-top: $very-big-padding;
+  padding-bottom: $very-big-padding;
 }
