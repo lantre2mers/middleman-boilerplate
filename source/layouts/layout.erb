@@ -11,6 +11,15 @@
 
     <%= stylesheet_link_tag "all" %>
     <%= javascript_include_tag  "all" %>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:image" content="http://www.lewagon.org/assets/logo-f800df98aa2605c552400667353f47d2.png" />
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Montserrat:400,700' rel='stylesheet' type='text/css'>
+
   </head>
 
   <body class="<%= page_classes %>">
@@ -25,7 +34,7 @@
             <span class="icon-bar"></span>
           </button>
           <% link_to "/index.html", class: "navbar-brand" do %>
-            <%= image_tag 'logo.svg' %>
+            <%= image_tag 'rice.svg' %>
           <% end %>
         </div>
 

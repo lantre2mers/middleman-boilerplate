@@ -4,3 +4,35 @@
  * Before writing in this file, look if there is not
  * already a Bootstrap SCSS variable that does the same job
  * ------------------------------------- */
+
+ body {
+  font-family: 'Open Sans', sans-serif;
+  color: #141414;
+}
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.red-background {
+  background: red;
+  color: white;
+}
+
+.padding {
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+.card{
+  padding: 0px 0px 0px 25px;
+  font-weight: 0;
+}
+
+.card h2{
+  font-size: 20px;
+}
+
+#white-block {
+  padding-top: 8em;
+  padding-bottom: 8em;
+}

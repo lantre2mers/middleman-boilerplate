@@ -1,10 +1,100 @@
 ---
-title: Le Wagon Middleman boilerplate
+title: Stylus HP
 ---
+  <!-- Banner -->
+  <div id="banner">
+    <h1>Styl.us</h1><br>
+    <p>Turn your pen into your best friend</p>
+    <p>Make every line you write count</p><br>
+    <%= link_to "Get info", "", class: "btn btn-danger btn-lg" %>
+  </div>
+  <!-- Features -->
 
-<div class="welcome text-center padded">
-  <h1>Middleman is Watching</h1>
-  <p class="doc">
-    <%= link_to "Read Online Documentation", "http://middlemanapp.com/" %>
-  </p><!-- .doc -->
-</div><!-- .welcome -->
+  <div class="red-background padding">
+    <div class="card">
+      <%= image_tag "rice.svg" %>
+      <h2>Natural writing</h2>
+      <p>Don't change your habits, write with a pen <strong>on paper notebooks</strong></p>
+    </div>
+    <div class="card">
+      <%= image_tag "rice.svg" %>
+      <h2>Sync. copy</h2>
+      <p>Stylus instantaneously copy your text on your computer, <strong>in real-time</strong></p>
+    </div>
+    <div class="card">
+      <%= image_tag "rice.svg" %>
+      <h2>Analytics</h2>
+      <p>Get feedbacks on the way you write, <strong>your favorite words, your frequent mistakes</strong></p>
+    </div>
+    <div class="card">
+      <%= image_tag "rice.svg" %>
+      <h2>Storing your texts</h2>
+      <p>Everything line writen with your stylus is stored in the cloud, so that <strong>it's never lost</strong></p>
+    </div>
+  </div>
+
+  <div class="text-center padded" id="white-block">
+    <h2>Get news from stylus</h2>
+    <p>Leave us your mail and get stylus news</p>
+    <form class="form-inline">
+      <input type="email" placeholder="bob@gmail.com" class="form-control">
+      <input type="submit" value="Subscribe" class="btn btn-primary">
+    </form>
+  </div>
+
+ <!-- Map -->
+<div id="map" style="width: 100%; height: 400px;"></div>
+
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+
+<script type="text/javascript">
+var myLatlng = new google.maps.LatLng(50.84755,4.3618529);
+
+var myOptions = {
+  zoom: 16,
+  center: myLatlng,
+  scrollwheel: false,
+  mapTypeId: google.maps.MapTypeId.ROADMAP,
+  styles: [{"featureType":"administrative","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"landscape","elementType":"all","stylers":[{"visibility":"simplified"},{"hue":"#0066ff"},{"saturation":74},{"lightness":100}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"off"},{"weight":0.6},{"saturation":-85},{"lightness":61}]},{"featureType":"road.highway","elementType":"geometry","stylers":[{"visibility":"on"}]},{"featureType":"road.arterial","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road.local","elementType":"all","stylers":[{"visibility":"on"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"water","elementType":"all","stylers":[{"visibility":"simplified"},{"color":"#5f94ff"},{"lightness":26},{"gamma":5.86}]}]
+  // TODO: replace [] by array from https://snazzymaps.com/
+};
+
+var map = new google.maps.Map(document.getElementById('map'), myOptions);
+var marker = new google.maps.Marker({
+  position: myLatlng,
+  map: map,
+  title: "You are here!"
+});
+</script>
+
+  <!-- Footer -->
+
+  <div id="footer">
+    <ul class="list-inline">
+      <li>
+        <% link_to "" do %>
+        <i class="fa fa-youtube"></i>
+        <% end %>
+      </li>
+      <li>
+        <% link_to "" do %>
+        <i class="fa fa-instagram"></i>
+        <% end %>
+      </li>
+      <li>
+        <% link_to "" do %>
+        <i class="fa fa-facebook"></i>
+        <% end %>
+      </li>
+      <li>
+        <% link_to "" do %>
+        <i class="fa fa-twitter"></i>
+        <% end %>
+        </li>
+    </ul>
+    <p>Stylus is a fictive product by LeWagon</p>
+  </div>
+
+  <!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
